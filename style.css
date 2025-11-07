@@ -1,0 +1,292 @@
+*{
+    font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+    top: 0; 
+    font-size: 4.7em;
+    color: #2d2b26;
+    margin-bottom: 0.15em;
+    font-weight: 600;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+}
+h2 {
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #585550;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+h3 {
+    text-align: center;
+    font-size: 2.2em;
+}
+h4 {
+    text-align: center;
+    font-size: 1.4em;
+}
+h5 {
+    text-align: center;
+    font-size: 1.2em;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #f5f2ef;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #3b3a36;
+}
+div {
+    padding: 2px;
+    text-align: center;
+    border-radius: 22px 22px 22px 22px;
+}
+ul {
+    display: inline-block; /* transforme la liste en bloc en ligne pour centrer */
+    text-align: left;      /* aligne le texte et puces à gauche dans ce bloc */
+    margin: 0 auto;        /* centre horizontalement la liste dans le parent */
+    padding-left: 25px;    /* espace pour puces sur la gauche */
+    list-style-position: outside; /* puces alignées sur gauche du padding */
+    max-width: 280px;      /* fixe une largeur max à adapter */
+}
+article {
+    background-color: #ffffff;
+}
+
+header {
+    background: #f5f2ef;
+    /*border-bottom: 3px solid #2d2b26;*/
+    padding: 40px 30px 28px 30px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-radius: 0 0 22px 22px;
+    position: relative;
+    text-align: center; /* centre le contenu du header */
+
+}
+
+.sommaire {
+    background: #c6beb0;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.pro {
+    background: #e7ded2;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 10px;
+}
+.formation {
+    background: #F7CAC9;
+    
+}
+
+.diplome-date{
+    font-size: 1.8em;
+    color: #585550;
+    font-style: italic;
+    text-align: right;
+    padding-right: 200px;
+    ;
+    
+}
+.diplome-description{
+    font-size: 1.5em;
+    line-height: 1.6em;
+
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    border-bottom: #f07472 2px solid;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.projectPython {
+    position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* pour contenir le pseudo-élément */
+    z-index: 0; /* contexte de pile */
+}
+.projectPython::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/python.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* niveau d'opacité désiré, ajustable */
+    z-index: -1; /* place le calque derrière le contenu */
+    border-radius: 8px; /* pour suivre la bordure arrondie */
+}
+.projectC {
+    position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* pour contenir le pseudo-élément */
+    z-index: 0; /* contexte de pile */
+}
+.projectC::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/C.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* niveau d'opacité désiré, ajustable */
+    z-index: -1; /* place le calque derrière le contenu */
+    border-radius: 8px; /* pour suivre la bordure arrondie */
+}
+.projectR {
+    position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* pour contenir le pseudo-élément */
+    z-index: 0; /* contexte de pile */
+}
+.projectR::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/R.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* niveau d'opacité désiré, ajustable */
+    z-index: -1; /* place le calque derrière le contenu */
+    border-radius: 8px; /* pour suivre la bordure arrondie */
+}
+.projectProlog {
+    position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* pour contenir le pseudo-élément */
+    z-index: 0; /* contexte de pile */
+}
+.projectProlog::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/prolog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* niveau d'opacité désiré, ajustable */
+    z-index: -1; /* place le calque derrière le contenu */
+    border-radius: 8px; /* pour suivre la bordure arrondie */
+}
+.projectLatex {
+    position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* pour contenir le pseudo-élément */
+    z-index: 0; /* contexte de pile */
+}
+.projectLatex::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/latex.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.3; /* niveau d'opacité désiré, ajustable */
+    z-index: -1; /* place le calque derrière le contenu */
+    border-radius: 8px; /* pour suivre la bordure arrondie */
+}
+.projectUML {
+    position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* pour contenir le pseudo-élément */
+    z-index: 0; /* contexte de pile */
+}
+
+.projectUML::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/uml.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* niveau d'opacité désiré, ajustable */
+    z-index: -1; /* place le calque derrière le contenu */
+    border-radius: 8px; /* pour suivre la bordure arrondie */
+}
+.project{
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(138, 74, 74, 0.1);
+    flex: 1 1 280px; /* Largeur minimum, peut grandir mais bouge en ligne */
+    max-width: 500px; /* Largeur maximale souhaitée */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+.projects-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0; /* espace vertical */
+    flex-wrap: wrap; /* responsive si trop étroit */
+}
+.competences {
+    background: #a7b6d1;
+}
+
+.langues {
+    background: #e4f5c9;
+}
