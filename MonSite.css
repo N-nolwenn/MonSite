@@ -1,0 +1,94 @@
+*{
+    font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+    top: 0; 
+    font-size: 4.7em;
+    color: #2d2b26;
+    margin-bottom: 0.15em;
+    font-weight: 600;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+}
+h2 {
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #585550;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+h3 {
+    text-align: center;
+    font-size: 2.2em;
+}
+h4 {
+    text-align: center;
+    font-size: 1.4em;
+}
+h5 {
+    text-align: center;
+    font-size: 1.2em;
+}
+header {
+    background: #f5f2ef;
+    /*border-bottom: 3px solid #2d2b26;*/
+    padding: 40px 30px 28px 30px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-radius: 0 0 22px 22px;
+    position: relative;
+    text-align: center; /* centre le contenu du header */
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #f5f2ef;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #3b3a36;
+}
+.competences {
+    background: #a7b6d1;
+    padding: 40px 30px 28px 30px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-radius: 0 0 22px 22px;
+    position: relative;
+    text-align: center; /* centre le contenu du header */
+
+}
+/* --- ONGLET (NAVIGATION) --- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f2ef;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tabs a {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 1.2em;
+  color: #2d2b26;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.tabs a:hover {
+  background: #ddd7d2;
+}
+
+.tabs a.active {
+  background: #2d2b26;
+  color: #fff;
+}
