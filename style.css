@@ -290,3 +290,13 @@ header {
 .langues {
     background: #e4f5c9;
 }
+/* Images des sections compétences et langues */
+.competences img,
+.langues img {
+    display: block;       /* pour centrer avec margin auto */
+    max-width: 80%;       /* largeur maximale 80% du conteneur */
+    max-height: 200px;    /* hauteur maximale pour éviter que ça déborde */
+    height: auto;         /* conserve les proportions */
+    margin: 0 auto 20px;  /* centre horizontalement + espace en bas */
+    border-radius: 12px;  /* optionnel : arrondir un peu les coins */
+}
