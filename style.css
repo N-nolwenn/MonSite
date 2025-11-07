@@ -83,6 +83,25 @@ header {
     font-size: 1.2em;
     line-height: 1.6em;
 }
+.a-propos-container {
+    display: flex;           /* active le mode flex */
+    align-items: center;     /* aligne verticalement le texte et la photo */
+    gap: 20px;               /* espace entre le texte et l'image */
+    flex-wrap: wrap;         /* pour que ça passe en dessous sur mobile */
+    margin: 0px 200px;
+}
+
+.texte-a-propos {
+    flex: 1;                 /* prend tout l'espace disponible */
+    min-width: 250px;        /* largeur minimale pour mobile */
+    text-align: justify;
+}
+
+.photo-profil {
+    width: 200px;            /* taille de la photo */
+    height: auto;            /* conserve les proportions */
+    border-radius: 10px;     /* coins arrondis */
+}
 
 .pro {
     background: #e7ded2;
