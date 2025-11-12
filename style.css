@@ -66,16 +66,65 @@ ul {
     transition: transform 0.2s, box-shadow 0.2s; /* effet au survol */
 }
 
-header {
-    background: #f5f2ef;
-    /*border-bottom: 3px solid #2d2b26;*/
-    padding: 40px 30px 28px 30px;
-    text-align: center;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    border-radius: 0 0 22px 22px;
-    position: relative;
-    text-align: center; /* centre le contenu du header */
 
+header {
+  background: #f5f2ef;
+  padding: 40px 30px 28px 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border-radius: 0 0 22px 22px;
+  text-align: center;;
+}
+.header-content {
+  display: flex;
+    max-width: 700px;
+  align-items: justify;    
+  justify-content: center;
+  gap: 2em;
+  text-align: center;
+  margin: 0 auto ;
+}
+
+/* bloc texte */
+.header-text {
+  flex: 1;                  /* 🟢 prend toute la largeur disponible */
+  background-color: #f7f6f3; /* optionnel : pour visualiser */
+  padding: 1em;
+  display: flex;
+  align-items: center;      /* centre verticalement le texte dans sa colonne */
+}
+
+/* image */
+.profile-pic {
+  width: 250px;
+  height: 100%;             /* 🟢 remplit la hauteur du conteneur */
+  object-fit: cover;        /* garde les proportions sans déformation */
+}
+
+/* titres */
+header h1 {
+  font-size: 4.7em;
+  color: #2d2b26;
+  margin-bottom: 0.15em;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #585550;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  margin-bottom: 1em;
+    text-align: center;
+}
+
+/* paragraphe */
+header p {
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .sommaire {
@@ -88,7 +137,7 @@ header {
     align-items: center;     /* aligne verticalement le texte et la photo */
     gap: 20px;               /* espace entre le texte et l'image */
     flex-wrap: wrap;         /* pour que ça passe en dessous sur mobile */
-    margin: 0px 200px;
+    margin: 0 100px;
 }
 
 .texte-a-propos {
@@ -331,4 +380,32 @@ header {
     height: auto;         /* conserve les proportions */
     margin: 0 auto 20px;  /* centre horizontalement + espace en bas */
     border-radius: 12px;  /* optionnel : arrondir un peu les coins */
+}
+/* --- ONGLET (NAVIGATION) --- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f2ef;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tabs a {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 1.2em;
+  color: #2d2b26;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.tabs a:hover {
+  background: #ddd7d2;
+}
+
+.tabs a.active {
+  background: #2d2b26;
+  color: #fff;
 }
