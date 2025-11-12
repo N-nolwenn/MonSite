@@ -50,6 +50,8 @@ header {
     gap: 2em;                /* espace entre l'image et le texte */
     align-items: center;
     padding: 0px 0px 0px 100px;
+    margin: auto 100px;
+    text-align: justify;
 }
 .header-content img{
     width: 250px;
