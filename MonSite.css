@@ -72,7 +72,7 @@ footer {
   ========================================================= */
 h1 {
     top: 0; 
-    font-size: 4.7em;
+    font-size: 4.3em;
     color: #2d2b26;
     margin-bottom: 0.15em;
     font-weight: 600;
@@ -155,9 +155,21 @@ h5 {
     padding-bottom: 150px;
     color: #222;
   }
+h1 {
+border-width: 3px;         /* Définir l'épaisseur */
+border-style: dotted;       /* Définir le style (obligatoire) */
+border-color: #007997;     /* Définir la couleur */
+text-shadow: 
+        1px 1px 0 #007997, 
+        2px 2px 0 #7ACF36,
+        3px 3px 0 #F8B3C3;
+}
 h2 {
   background-image: url('images/etoiles.png');
   color: #fff;
+}
+h3{
+  color : #007997;
 }
 footer {
     background-color: #fff; /* fond transparent correct */
@@ -170,10 +182,10 @@ footer {
   }
 
   .profile-pic {
-      order: -1;
-      width: 80%;
+    display:none;
+      /*width: 80%;
       max-width: 250px;
-      margin-bottom: 1em;
+      margin-bottom: 1em;*/
   }
 
   .header-text {
@@ -198,7 +210,6 @@ footer {
       width: 100%;
       margin: 0 auto 15px auto;
       font-size: 1.05em;
-      border-radius: 12px;
       color: #222;
       box-shadow: 0 4px 10px rgba(255, 102, 204, 0.5);
   }
@@ -262,7 +273,7 @@ footer {
 
   .tabs a.active {
     background: none;           /* pas de fond */
-    color: #63cc00;             /* couleur du texte, violet néon par exemple */
+    color: #7ACF36;             /* couleur du texte, violet néon par exemple */
     font-weight: bold;       /* texte en gras */
   }
 

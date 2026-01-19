@@ -1,0 +1,283 @@
+/* =========================================================
+  RESET & RÈGLES GLOBALES
+  ========================================================= */
+:root {
+  /* Assurez-vous que ces variables sont définies ici ou dans wada-palette.css */
+  --color-ntwarp-blue: #007997; 
+  --color-night-green: #7ACF36;
+  --color-hermosa-pink: #F8B3C3;
+  --color-spectrum-red: #E60012;
+  --color-white: #FFFFFF;
+  --color-black: #1E1E1E; 
+
+  /* Définition des rôles fonctionnels pour le style de bureau */
+  --color-text-main: #3b3a36; /* Garde le gris subtil original pour le corps de texte */
+  --color-background-soft: #f5f2ef; /* Garde le fond doux original */
+}
+
+*{
+font-family: "Cormorant Garamond", serif;
+text-align: justify;
+}
+body {
+    /* Utilisation d'un fond blanc/léger pour le corps pour la lisibilité */
+background-color: var(--color-white); 
+padding-bottom: 120px;
+text-align: center;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: var(--color-text-main); 
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto 1em auto;
+    padding: 20px;
+}
+div {
+    padding: 2px;
+    text-align: center;
+}
+details {
+    margin-bottom: 2em;             /* espacement entre les sections */
+    cursor: pointer;
+    /* Exemple de bordure dynamique */
+    border-left: 5px solid var(--color-night-green); 
+    padding-left: 15px;
+}
+/* =========================================================
+  HEADER (structure & style)
+   ========================================================= */
+.header-content {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2em;
+max-width: 1000px;
+margin: 0 auto;
+}
+/* bloc texte */
+.header-text {
+flex: 1; 
+/* Création d'un FOND MOTIF/DÉGRADÉ avec la palette */
+background: linear-gradient(135deg, var(--color-hermosa-pink) 0%, var(--color-white) 50%, var(--color-hermosa-pink) 100%);
+padding: 1em;
+display: flex;
+align-items: center; 
+}
+/* image */
+.profile-pic {
+width: 250px;
+height: 100%;
+object-fit: cover;
+   /* Bordure épaisse avec le Bleu Teal */
+    border: 8px solid var(--color-ntwarp-blue); 
+}
+/* paragraphe */
+header p {
+line-height: 1.6;
+text-align: justify;
+}
+/* =========================================================
+  FOOTER
+  ========================================================= */
+footer {
+position: fixed;
+bottom: 0;
+ right: 0;
+ left: 0;
+ text-align: center;
+ /* Fond Rouge Vif pour le Footer pour un contraste fort */
+ background-color: var(--color-spectrum-red); 
+    /* Texte blanc sur le fond rouge */
+    color: var(--color-white);
+}
+
+/* Rendre les images du footer claires pour le contraste */
+footer img {
+    filter: invert(1); /* Inverse les couleurs pour qu'elles soient blanches */
+}
+
+/* =========================================================
+  TYPOGRAPHIE GLOBALE
+  ========================================================= */
+h1 {
+ top: 0; 
+ font-size: 4.7em;
+ /* Titre principal en Bleu Teal */
+ color: var(--color-ntwarp-blue); 
+ margin-bottom: 0.15em;
+ font-weight: 600;
+ letter-spacing: 0.045em;
+ text-transform: uppercase;
+ text-align: center;
+
+}
+h2 {
+ font-weight: 400;
+font-size: 2.4em;
+ /* Sous-titre en Vert Vif */
+ color: var(--color-night-green); 
+ font-style: italic;
+ letter-spacing: 0.04em;
+ text-align: center;
+    /* Bordure de séparation en Rouge Vif */
+    border-bottom: 3px dashed var(--color-spectrum-red);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+h3 {
+ text-align: center;
+ font-size: 2.2em;
+ font-style: italic;
+ letter-spacing: 0.04em;
+ margin: 20px 0 10px 0;
+    /* Titre H3 en Rouge Vif */
+    color: var(--color-spectrum-red);
+}
+h4 {
+ text-align: center;
+ font-size: 1.4em;
+ font-style: italic;
+ letter-spacing: 0.04em;
+    /* Titre H4 en Noir Proche */
+    color: var(--color-black);
+}
+h5 {
+ text-align: center;
+ font-size: 1.2em;
+ font-style: italic;
+ letter-spacing: 0.04em;
+ margin-bottom: 0.5em;
+    /* Titre H5 en Bleu Teal */
+    color: var(--color-ntwarp-blue);
+}
+
+
+/* =========================================================
+  NAVIGATION (ONGLETS)
+  ========================================================= */
+/* --- CE BLOC EST LAISSÉ INTACT COMME DEMANDÉ --- */
+.tabs {
+display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f5f2ef; /* INTACT */
+ margin-bottom: 20px;
+ border-bottom: 2px solid #ddd; /* INTACT */
+}
+
+.tabs a {
+ flex: 1;
+ text-align: center;
+ padding: 12px 0;
+ font-size: 1.2em;
+ color: #2d2b26; /* INTACT */
+ text-decoration: none;
+ transition: background 0.3s;
+}
+
+.tabs a:hover {
+ background: #ddd7d2; /* INTACT */
+}
+
+.tabs a.active {
+ background: #000000; /* INTACT */
+ color: #fff; /* INTACT */
+}
+
+ #menu-toggle {
+ display: none;
+ }
+/* -------------------------------------------------------- */
+ 
+/* =========================================================
+   RESPONSIVE MOBILE (téléphones standards)
+   ========================================================= */
+/* NOTE : Le style mobile doit être cohérent. J'ai utilisé les couleurs
+   de la palette pour les parties non-onglets du bloc mobile également. */
+@media (max-width: 600px) {
+
+body {
+ padding-bottom: 150px;
+ color: var(--color-black); /* Anciennement #222 */
+ }
+h2 {
+background-image: url('images/etoiles.png');
+color: var(--color-white); /* Gardé blanc sur l'image de fond */
+}
+footer {
+ background-color: var(--color-spectrum-red); /* Fond cohérent avec le bureau */
+ box-shadow: 0 4px 10px rgba(248, 179, 195, 0.5); /* Ombre Rose Clair */
+    color: var(--color-white);
+}
+
+.header-content, div {
+ flex-direction: column;
+ align-items: center;
+}
+
+ .profile-pic {
+ display:none;
+  }
+
+ .header-text {
+ text-align: center;
+ padding: 0 10px;
+      /* FOND MOTIF/DÉGRADÉ aussi sur mobile */
+      background: linear-gradient(135deg, var(--color-hermosa-pink) 0%, var(--color-white) 50%, var(--color-hermosa-pink) 100%);
+ }
+
+ p {
+ font-size: 1.05em;
+ padding: 15px;
+ max-width: 100%;
+ margin: 0 auto 15px auto;
+ color: var(--color-black); 
+ box-shadow: 0 4px 10px rgba(248, 179, 195, 0.5); /* Ombre Rose Clair */
+ }
+
+ summary {
+ cursor: pointer;
+ display: block;
+ box-sizing: border-box;
+ max-width: 100%;
+ width: 100%;
+ margin: 0 auto 15px auto;
+ font-size: 1.05em;
+ color: var(--color-black); 
+ box-shadow: 0 4px 10px rgba(248, 179, 195, 0.5); /* Ombre Rose Clair */
+ }
+
+ /* Masquer la checkbox */
+ #menu-toggle {
+display: none;
+ }
+
+ /* Hamburger (NON-ONGLET) */
+ .hamburger {
+position: fixed;
+ top: 15px;
+ right: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ width: 30px;
+ height: 25px;
+ cursor: pointer;
+ z-index: 1001; 
+ }
+
+ .hamburger span {
+ display: block;
+height: 4px;
+ background-color: var(--color-hermosa-pink); /* Lignes du hamburger en Rose Clair */
+ border-radius: 2px;
+ transition: all 0.3s;
+ }
+
+  /* Le reste du bloc .tabs est laissé INTACT pour ne pas modifier les liens */
+  /* .tabs { ... } */
+  /* .tabs a { ... } */
+  /* .tabs a.active { ... } */
+}
