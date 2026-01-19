@@ -186,7 +186,6 @@ footer {
       padding: 15px;
       max-width: 100%;
       margin: 0 auto 15px auto; /* centre horizontalement */
-      border-radius: 16px;
       color: #000000;
       box-shadow: 0 4px 10px rgba(255, 102, 204, 0.5);
   }
