@@ -9,3 +9,11 @@ img {
     margin: 0 auto;
 }
 
+summary {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 1,2em;    
+}
